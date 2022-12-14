@@ -16,15 +16,14 @@ jobs:
 
       - uses: joblo2213/aoc-badges-action@v3
         with:
-          userid: 00000 # your user id, see setup on how to obtain
+          userid: 2763545
           session: ${{ secrets.AOC_SESSION }} # secret containing session code, see setup on how to obtain
-
-    # Optional inputs:
-    year: 2022 # The year for which stats should be retrieved
-    leaderboard: 'https://adventofcode.com/2022/leaderboard/private/view/2763545.json'
-    file: 'README.md'                                                                              # The file that contains the badges
-    dayRegex: '(?<=https:\/\/img\.shields\.io\/badge\/day%20📅-)[0-9]+(?=-blue)'
-    daysCompletedRegex: '(?<=https:\/\/img\.shields\.io\/badge\/days%20completed-)[0-9]+(?=-red)'
+          # Optional inputs:
+          year: 2022 # The year for which stats should be retrieved
+          leaderboard: "https://adventofcode.com/2022/leaderboard/private/view/2763545.json"
+          file: "readme.md" # The file that contains the badges
+          dayRegex: '(?<=https:\/\/img\.shields\.io\/badge\/day%20📅-)[0-9]+(?=-blue)'
+          daysCompletedRegex: '(?<=https:\/\/img\.shields\.io\/badge\/days%20completed-)[0-9]+(?=-red)'
 
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
